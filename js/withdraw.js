@@ -12,7 +12,7 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   withdrawField.value = "";
   
 
-  if (isNaN(newWithdrawAmount) || newWithdrawAmount === 'string' || newWithdrawAmount < 0 || newWithdrawAmount.length !== 'number') {
+  if (isNaN(newWithdrawAmount) || newWithdrawAmount === 'string' || newWithdrawAmount < 0) {
     alert('Provide an absolute withdrawal Amount');
     return;
   }
