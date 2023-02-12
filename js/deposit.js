@@ -4,6 +4,10 @@ document.getElementById("btn-deposit").addEventListener('click', function() {
 const depositField = document.getElementById("deposit-field");
 const newDepositAmountString = depositField.value;
 const newDepositAmount = parseFloat(newDepositAmountString);
+if(isNaN(newDepositAmount)) {
+    alert('Provide an absolute deposit amount');
+    return;
+}
 // step 3: get the final deposit amount from the deposit field
 const depositTotalElement = document.getElementById("deposit-total");
 const previousDepositAmountString = depositTotalElement.innerText;

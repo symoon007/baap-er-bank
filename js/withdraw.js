@@ -13,7 +13,7 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   
 
   if (isNaN(newWithdrawAmount) || newWithdrawAmount === 'string' || newWithdrawAmount < 0) {
-    alert('Provide an absolute withdrawal Amount');
+    alert('Provide an absolute withdrawal amount');
     return;
   }
   // step 3: get the final withdraw amount from the deposit field
