@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Royal Bank</title>
+     <!-- vanilla css -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- vanilla css -->
-    <link rel="stylesheet" href="style.css">
+   
   </head>
-  <body>
+  <body class="max-md:bg-emerald-100">
     <header>
       <h1 class="text-5xl text-center mt-6 font-rubik">
         Welcome to the
@@ -18,12 +19,12 @@
       </h1>
     </header>
     <main class="container-fluid main-container">
-      <section class="bg-violet-300 w-9/12 mx-auto mt-12 p-8 rounded">
-        <h3 class="mb-4 text-3xl font-poppins font-medium">Please Login</h3>
-        <div class="log-input">
-          <input class="w-1/2 mb-3 block px-5 font-poppins h-8 rounded" type="email" name="" id="user-email" placeholder="Enter Your email"/>
-          <input class="w-1/2 mb-3 block px-5 font-poppins h-8 rounded" type="password" name="" id="user-password" placeholder="Password"/>
-          <button id="btn-login" class="bg-emerald-400 rounded py-2 px-8 text-xl font-medium text-white hover:bg-emerald-500 l-space-btn">Login</button>
+      <section class="bg-violet-300 md:w-9/12 md:mx-auto mt-12 p-8 rounded">
+        <h3 class="mb-4 text-3xl font-poppins font-medium max-md:text-center">Please Login</h3>
+        <div class="max-md:text-center">
+          <input class="md:w-1/2 mb-3 block px-5 font-poppins h-8 rounded max-md:mx-auto" type="email" name="" id="user-email" placeholder="Enter Your email"/>
+          <input class="md:w-1/2 mb-3 block px-5 font-poppins h-8 rounded max-md:mx-auto" type="password" name="" id="user-password" placeholder="Password"/>
+          <button id="btn-login" class="bg-emerald-400 rounded py-2 px-8 text-xl font-medium text-white hover:bg-emerald-500 l-space-btn ">Login</button>
         </div>
       </section>
     </main>
