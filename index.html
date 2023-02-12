@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- vanilla css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6 font-rubik">
+        Welcome to the
+        <span class="font-semibold text-violet-600">Royal Bank</span>
+      </h1>
+    </header>
+    <main>
+      <section class="bg-violet-300 w-9/12 mx-auto mt-12 p-8 rounded">
+        <h3 class="mb-4 text-3xl font-poppins font-medium">Please Login</h3>
+        <div>
+          <input class="w-1/2 mb-3 block px-5 font-poppins h-8 rounded" type="email" name="" id="user-email" placeholder="Enter Your email"/>
+          <input class="w-1/2 mb-3 block px-5 font-poppins h-8 rounded" type="password" name="" id="user-password" placeholder="Password"/>
+          <button id="btn-login" class="bg-emerald-400 rounded py-2 px-8 text-xl font-medium text-white hover:bg-emerald-500 l-space-btn">Login</button>
+        </div>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>

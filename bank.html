@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Account</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- vanilla css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6 font-rubik">
+        Let's get started
+        <span class="font-semibold text-violet-600">Your Transaction!</span>
+      </h1>
+    </header>
+    <main>
+         <section>
+      <div class="grid grid-cols-3 w-9/12 mx-auto gap-4 text-white mt-12">
+        <div class="bg-cyan-400 p-8 rounded-xl">
+          <h4 class="text-2xl font-rubik">Credit</h4>
+          <h2 class="text-4xl font-poppins">$<span id="deposit-total">00</span> </h2>
+        </div>
+        <div class="bg-red-400 p-8 rounded-xl">
+          <h4 class="text-2xl font-rubik">Dabit</h4>
+          <h2 class="text-4xl font-poppins">$ <span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-violet-400 p-6 rounded-xl">
+          <h4 class="text-2xl font-rubik">Balance</h4>
+          <h2 class="text-4xl font-poppins">$ <span id="balance-total">00</span> </h2>
+        </div>
+      </div>
+    </section>
+    <!-- deposit and withdraw -->
+    <section>
+      <div class="grid grid-cols-2 w-9/12 mx-auto gap-4 text-white mt-12">
+        <div class="bg-green-600 p-8 rounded-xl ">
+          <h4 class="text-2xl font-rubik">Please Deposit</h4>
+       
+           <input class="text-neutral-800 w-5/6 mb-3 block mt-4 mb-4 px-1 font-poppins h-8 rounded" type="text" name="" id="deposit-field" placeholder="Enter deposit amount"/>
+          <button id="btn-deposit" class="bg-cyan-400 rounded py-2 px-8 text-xl font-medium text-white hover:bg-cyan-500 l-space-btn">Deposit</button>
+        </div>
+
+        <div class="bg-purple-600 p-8 rounded-xl">
+          <h4 class="text-2xl font-rubik">Please Withdraw</h4>
+           <input id="withdraw-field" type="text"class="text-neutral-800 w-5/6 mb-3 block mb-4 mt-4 px-1 font-poppins h-8 rounded text-" type="text" name="" id="" placeholder="Enter withdrawal amount"/>
+          <button id="btn-withdraw" class="bg-red-400 rounded py-2 px-8 text-xl font-medium text-white hover:bg-red-500 l-space-btn">Withdraw</button>
+        </div>
+      </div>
+    </section>
+    </main>
+   <script src="js/deposit.js"></script>
+   <script src="js/withdraw.js"></script>
+
+  </body>
+</html>

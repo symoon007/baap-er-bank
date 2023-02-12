@@ -1,0 +1,25 @@
+/* 
+project fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.font-rubik {
+    font-family: 'Rubik', sans-serif;
+
+}
+.l-space-btn {
+    letter-spacing: 1.5px;
+}
+.depo-bg {
+    background: rgb(0,150,100);
+background: linear-gradient(180deg, rgba(0,150,100,1) 31%, rgba(3,169,244,1) 180%);
+};
+.with-bg {
+    background: rgb(186,104,200);
+background: linear-gradient(180deg, rgba(186,104,200,1) 33%, rgba(239,83,80,1) 180%);
+};
+.bg {
+    background-color: black;
+}
